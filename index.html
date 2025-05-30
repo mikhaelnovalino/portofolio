@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Mikhael Novalino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="videos/Background2.mp4" type="video/mp4" />
+      <div class="overlay"></div>
+    </video>
+    <header>
+      <div class="container">
+        <h1>Mikhael Novalino</h1>
+        <p>Web Developer | Software Engineering</p>
+        <nav>
+          <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">MY PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container blur-bg">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          Saya Mikhael Novalino adalah seorang mahasiswa Teknologi Informasi Di
+          Kampus Bina Sarana Informatika Cikarang yang sekarang sedang menempuh
+          pendidikan S1. Saya adalah orang yang sangat bersemangat mempelajari
+          hal hal baru terutama tentang coding dan pengembangan menuju dunia
+          digital. saya sangat setuju ketika dunia mulai berkembang ke arah
+          digital, saya akan menjadi salah satu orang sang sangat suport
+          kegiatan tersebut. Saat ini saya juga sedang bekerja di Perum Peruri
+          (Percetakan Uang Republik Indonesia) yang saat ini juga sedang gencar
+          membuat berbagai terobosan pada bidang digital. Diluar dari kesibukan
+          saya bekerja dan kuliah saya memiliki banyak sekali hobi yaitu
+          bersepeda, mendaki gunung, otomotif, bermain gitar dan masih banyak
+          lagi
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">SKILLS</h2>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>UI/UX Desain</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>MY PROJECT</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="images/proyek1.1.png" alt="Proyek 1" />
+            <div class="project-content">
+              <h3>Aplikasi Penjualan Tiket konser</h3>
+              <p>
+                Saya telah berhasil membuat Aplikasi untuk penjualan tiket
+                konser Tour Neck Deep yang akan diselenggarakan di beberapa kota
+                dan negara di asia menggunakan bahasa pemrograman java pasa
+                aplikasi netbeans. program tersebut telah berhasil running
+                dengan lancar tanpa bug.
+              </p>
+              <a href="proyek1.html">Lihat Proyek</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/proyek2.1.png" alt="Proyek 1" />
+            <div class="project-content">
+              <h3>Toko Kopi Online</h3>
+              <p>
+                saya telah berhasil membuat website toko kopi yang bisa diakses
+                secara online untuk membantu pengguna dalam memesan kopi yang
+                mereka suka tanpa perlu membuang buang waktu pergi ke coffee
+                shop. website ini saya buat dengan menggunakan bahasa
+                pemrograman html dan style css yang yang telah disempurnakan
+                dengan menggunakan tambahan JavaScript untuk tampilan yang lebih
+                menarik dan responsif
+              </p>
+              <a href="proyek2.html">Lihat Proyek</a>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak project card jika diperlukan -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+      <div class="container contact-box">
+        <h2>Kontak</h2>
+        <form action="https://formspree.io/f/mrbkzqaw" method="POST">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>Hubungi Saya:</p>
+        <div class="footer-contacts">
+          <a href="mailto:mikahelnovalino11@email.com" target="_blank">
+            <img
+              src="images/logo-email.png"
+              alt="Email"
+              width="24"
+              height="24"
+            />
+            mikhaelnovalino11@gmail.com
+          </a>
+          <a href="https://wa.me/6289696837280" target="_blank">
+            <img
+              src="images/logo-wa.jpg"
+              alt="WhatsApp"
+              width="24"
+              height="24"
+            />
+            089696837280
+          </a>
+          <a href="https://instagram.com/username" target="_blank">
+            <img
+              src="images/logo-ig.webp"
+              alt="Instagram"
+              width="24"
+              height="24"
+            />
+            Mikhaelnovalino
+          </a>
+        </div>
+        <p>&copy; 2025 Mikhael Novalino. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
