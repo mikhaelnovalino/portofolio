@@ -314,14 +314,23 @@ a:hover {
 .video-background iframe {
   position: absolute;
   top: 50%; left: 50%;
-  width: 120vw;
-  height: 67.5vw; /* rasio 16:9 */
-  min-width: 100vw;
-  min-height: 100vh;
+  
+  /* Lebar dan tinggi diset 100%, lalu transform untuk center */
+  width: 100vw;
+  height: 100vh;
+  
+  /* Untuk bikin isi iframe full dan crop sesuai ratio */
+  object-fit: cover;  /* Ini sebenarnya buat <video> dan <img>, tapi kita coba pakai transform dan ukuran */
+
   transform: translate(-50%, -50%);
   pointer-events: none;
   border: none;
+  
+  /* Kalau object-fit ga jalan, coba trik scale */
+  min-width: 177.77vh; /* 100vh * (16/9) */
+  min-height: 100vh;
 }
+
 
 .video-background .overlay {
   position: absolute;
