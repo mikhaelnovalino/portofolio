@@ -304,8 +304,7 @@ a:hover {
 
 .video-background {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -314,23 +313,20 @@ a:hover {
 
 .video-background iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   width: 120vw;
-  height: 67.5vw; /* rasio 16:9 dari lebar */
-  max-width: none;
-  max-height: none;
+  height: 67.5vw; /* rasio 16:9 */
   min-width: 100vw;
   min-height: 100vh;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  border: none;
 }
 
 .video-background .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3); /* efek gelap */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  pointer-events: none;
 }
