@@ -1,4 +1,4 @@
-:root {
+:root { 
   --primary-color: #5a43ea;
   --secondary-color: #f9f9f9;
   --bg-light: #f9f9f9;
@@ -338,4 +338,71 @@ a:hover {
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.3);
   pointer-events: none;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* lebih kecil supaya muat */
+  }
+  header nav ul {
+    flex-direction: column; /* nav menu jadi vertikal */
+    gap: 1rem;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .section {
+    padding: 2rem 0.5rem;
+  }
+
+  h2, .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-box {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .video-background iframe {
+    width: 100vw;
+    height: 56.25vw; /* height proporsional 16:9 berdasarkan width */
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .video-background .overlay {
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  h2, .section-title {
+    font-size: 1.5rem;
+  }
+  .about-text {
+    font-size: 0.9rem;
+  }
 }
