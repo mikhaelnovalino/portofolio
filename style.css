@@ -316,13 +316,15 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300vw; /* Perbesar lebar berdasarkan lebar layar */
-  height: 170vh; /* Tinggi lebih dari 100% agar tidak ada kosong */
+  width: 120vw;
+  height: 67.5vw; /* rasio 16:9 dari lebar */
+  max-width: none;
+  max-height: none;
+  min-width: 100vw;
+  min-height: 100vh;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-
-
 
 .video-background .overlay {
   position: absolute;
